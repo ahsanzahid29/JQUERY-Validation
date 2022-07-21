@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Form styling -->
+    <style>
+      .error{
+        color: red;
+      }
+      .test{
+        border:2px solid red;
+      }
+    </style>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div id="c1" class="container">
+        <h1> Welcome to JQuery Form</h1>
+
+        <form class="mt-5" action="thankyou.html" id="myForm" method="post">
+          <div class="row mb-3">
+            <label for="fname" class="col-sm-2 col-form-label">Full Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="fname" >
+            </div>
+           
+          </div>
+          <div class="row mb-3">
+            <label for="femail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="femail">
+             
+            </div>
+            
+          </div>
+          <div class="row mb-3">
+            <label for="password" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input id="userpassword" type="password" class="form-control" name="fpassword">
+              
+            </div>
+            
+          </div>
+          <div class="row mb-3">
+            <label for="confirmpassword" class="col-sm-2 col-form-label">Confirm Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" name="fconfirmpassword">
+              
+            </div>
+            
+          </div>
+          <div class="row mb-3">
+            <label for="select" class="col-sm-2 col-form-label">Profession</label>
+            <div class="col-sm-10">
+              <select class="form-select" name="fprofession">
+                <option value="">Open this select menu</option>
+                <option value="1">IT</option>
+                <option value="2">BUSSINES</option>
+                <option value="3">DOCTORS</option>
+              </select>
+            </div>
+           
+          </div>
+          <fieldset class="row mb-3">
+            <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="fgender[]" id="gridRadios1" value="male" >
+                <label class="form-check-label" for="gridRadios1">
+                  Male
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="fgender[]" id="gridRadios2" value="female">
+                <label class="form-check-label" for="gridRadios2">
+                  Female
+                </label>
+              </div>
+              <label for="fgender[]" class="error" ></label>
+            </div>
+          </fieldset>
+          <div class="row mb-3" id="language">
+            <legend class="col-form-label col-sm-2 pt-0">Languages</legend>
+            <div class="col-sm-10 ">
+              <div class="form-check">
+                <input class="form-check-input" name="flanguage[]" type="checkbox" >
+                <label class="form-check-label" for="gridCheck1">
+                  English
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" name="flanguage[]" type="checkbox" >
+                <label class="form-check-label" for="gridCheck1">
+                  Urdu
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" name="flanguage[]" type="checkbox" >
+                <label class="form-check-label" for="gridCheck1">
+                  Spanish
+                </label>
+              </div>
+              <label for="flanguage[]" class="error" ></label>
+            </div>
+           
+            
+          </div>
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+    </div>
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- include jquery -->
+    <script src="js/jquery.js"></script>
+    <script src="jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="js/myvalidation.js"></script>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+  </body>
+</html>
